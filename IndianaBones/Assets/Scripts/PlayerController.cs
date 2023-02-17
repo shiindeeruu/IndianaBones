@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject deathTextObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,5 +33,14 @@ public class PlayerController : MonoBehaviour
          *     the old switcheroo
          *     idk
          */
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Spike")
+        {
+            deathTextObject.SetActive(true);
+            transform.position = new Vector3(-0.019f, 0.403f, 6.067f);
+        }
     }
 }

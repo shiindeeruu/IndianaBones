@@ -7,6 +7,9 @@ TagManager:
   - projectile
   - FxTemporaire
   - Tripwire
+  - Bone
+  - Skull
+  - Spike
   layers:
   - Default
   - TransparentFX
