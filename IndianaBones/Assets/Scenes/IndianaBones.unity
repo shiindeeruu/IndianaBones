@@ -960,6 +960,34 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -722273811539600048, guid: 79d7492cd7ff7ed4593737cb664b636b, type: 3}
+--- !u!114 &336425438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336425433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56c319ffbf63f143974f9c259a6abb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 658937519}
+  yDisplacement: 3.89
+--- !u!114 &336425439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336425434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56c319ffbf63f143974f9c259a6abb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 658937519}
+  yDisplacement: 3.89
 --- !u!1 &337252811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1373,7 @@ GameObject:
   - component: {fileID: 468850814}
   m_Layer: 0
   m_Name: PlateObject_Correct02
-  m_TagString: Untagged
+  m_TagString: Key2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,6 +2300,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5779197439840542771, guid: 6a2dc2388d44a0f47880f34dd78f3645, type: 3}
+--- !u!114 &658937521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658937519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc6768536dd138439fff8ad331f5eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &680638048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,7 +6536,7 @@ GameObject:
   - component: {fileID: 2105089555}
   m_Layer: 0
   m_Name: PlateObject_Correct01
-  m_TagString: Untagged
+  m_TagString: Key1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

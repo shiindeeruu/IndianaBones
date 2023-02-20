@@ -11,6 +11,8 @@ TagManager:
   - Skull
   - Spike
   - PressurePlate
+  - Key2
+  - Key1
   layers:
   - Default
   - TransparentFX

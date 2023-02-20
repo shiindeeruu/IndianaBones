@@ -36,10 +36,16 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isOpen)
+        if (!isOpen && (other.tag == "Key1" || other.tag == "Key2"))
         {
             isOpen = true;
             door.transform.position += new Vector3(0, yDisplacement, 0); // z needs to change to z-position of the door
         }
+
+        /*
+         * if both pressure plates have an object on it
+         *      if the objects on the pressure plate are the key objects
+         *          open the door
+         */
     }
 }
