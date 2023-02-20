@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Tripwire : MonoBehaviour
 {
-    public GameObject spikes;
-    public float x;
+    public GameObject leftSpikes;
+    public GameObject rightSpikes;
+    public float xLeft;
+    public float xRight;
     public float y;
     public float z;
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class Tripwire : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        spikes.transform.position = new Vector3(x, y, z);
+        leftSpikes.transform.position = new Vector3(xLeft, y, z);
+        rightSpikes.transform.position = new Vector3(xRight, y, z);
     }
 }
