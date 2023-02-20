@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
+    public GameObject door;
+    public float yDisplacement;
+
+    private bool isOpen = false;
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Bone" || other.tag == "Skull" || other.tag == "Player")
@@ -25,8 +29,16 @@ public class PressurePlate : MonoBehaviour
                     renderer.material.color = Color.blue;
                 }
 
-                Destroy(this);
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!isOpen)
+        {
+            isOpen = true;
+            door.transform.position += new Vector3(0, yDisplacement, 0); // z needs to change to z-position of the door
         }
     }
 }

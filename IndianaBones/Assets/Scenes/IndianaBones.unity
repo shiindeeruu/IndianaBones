@@ -1338,6 +1338,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 678010459}
     m_Modifications:
+    - target: {fileID: 2596988113922844069, guid: 3a81684abd3e82a40901c555a3411b71,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618095250594857523, guid: 3a81684abd3e82a40901c555a3411b71,
+        type: 3}
+      propertyPath: yDisplacement
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4656399474844044454, guid: 3a81684abd3e82a40901c555a3411b71,
         type: 3}
       propertyPath: m_Name
@@ -1541,7 +1551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1716,6 +1726,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &604250990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604250978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a8426240f3c9b44a7b03886c96bcdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTextObject: {fileID: 0}
 --- !u!1001 &629274715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,7 +1898,7 @@ GameObject:
   - component: {fileID: 678010459}
   m_Layer: 0
   m_Name: Pressure Plates
-  m_TagString: Untagged
+  m_TagString: PressurePlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5808,10 +5831,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 678010459}
     m_Modifications:
+    - target: {fileID: 2596988113922844069, guid: 3a81684abd3e82a40901c555a3411b71,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618095250594857523, guid: 3a81684abd3e82a40901c555a3411b71,
+        type: 3}
+      propertyPath: yDisplacement
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4656399474844044454, guid: 3a81684abd3e82a40901c555a3411b71,
         type: 3}
       propertyPath: m_Name
       value: Pressure Plate
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656399474844044454, guid: 3a81684abd3e82a40901c555a3411b71,
+        type: 3}
+      propertyPath: m_TagString
+      value: PressurePlate
       objectReference: {fileID: 0}
     - target: {fileID: 8813516148448189998, guid: 3a81684abd3e82a40901c555a3411b71,
         type: 3}

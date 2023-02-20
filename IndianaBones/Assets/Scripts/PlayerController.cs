@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             deathTextObject.SetActive(true);
             transform.position = new Vector3(-0.019f, 0.403f, 6.067f);
+
         }
     }
 }
