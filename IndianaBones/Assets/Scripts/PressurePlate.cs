@@ -8,6 +8,7 @@ public class PressurePlate : MonoBehaviour
     public float yDisplacement;
 
     private bool isOpen = false;
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Bone" || other.tag == "Skull" || other.tag == "Player")

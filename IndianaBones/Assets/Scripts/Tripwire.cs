@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Tripwire : MonoBehaviour
 {
+    public GameObject spikes;
+    public float x;
+    public float y;
+    public float z;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +22,6 @@ public class Tripwire : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "Bone" || other.tag == "Skull")
-        {
-            //launch spikes
-        }
+        spikes.transform.position = new Vector3(x, y, z);
     }
 }
