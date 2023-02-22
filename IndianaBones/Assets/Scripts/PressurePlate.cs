@@ -48,4 +48,13 @@ public class PressurePlate : MonoBehaviour
          *          open the door
          */
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (isOpen && (other.tag == "Key1" || other.tag == "Key2"))
+        {
+            isOpen = false;
+            door.transform.position += new Vector3(0, 1.416f, 0); // z needs to change to z-position of the door
+        }
+    }
 }
