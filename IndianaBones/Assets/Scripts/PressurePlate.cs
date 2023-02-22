@@ -13,15 +13,26 @@ public class PressurePlate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Key1"))
         {
-            collectState++;
+            collectState += 1;
+            Debug.Log(collectState);
         }
         if (other.gameObject.CompareTag("Key2"))
         {
-            collectState++;
+            collectState += 1;
+            Debug.Log(collectState);
         }
+    }
+
+    private void Update()
+    {
         if (collectState == collectGoal)
         {
             door.open = true;
+            Debug.Log("door is open\n");
+        }
+        if (collectState <= collectGoal)
+        {
+            door.open = false;
         }
     }
 
@@ -29,13 +40,15 @@ public class PressurePlate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Key1"))
         {
-            collectState--;
+            collectState -= 1;
+            Debug.Log(collectState);
         }
         if (other.gameObject.CompareTag("Key2"))
         {
-            collectState--;
+            collectState -= 1;
+            Debug.Log(collectState);
         }
-        if (collectState < collectGoal)
+        if (collectState <= collectGoal)
         {
             door.open = false;
         }
