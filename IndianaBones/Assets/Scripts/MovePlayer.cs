@@ -37,7 +37,9 @@ public class MovePlayer : MonoBehaviour
                 speed = Mathf.Clamp(speed, 0, maxSpeed);
                 // move the player prefab along the horizontal plane in the direction specified earlier
                 transform.position += speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up);
-            } else if (moveValue.axis.y < 0)
+            } 
+            
+            /*else if (moveValue.axis.y < 0)
             {
                 Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(0, 0, moveValue.axis.y));
                 speed = moveValue.axis.y * sensitivity;
@@ -49,14 +51,13 @@ public class MovePlayer : MonoBehaviour
                 speed = moveValue.axis.x * sensitivity;
                 speed = Mathf.Clamp(speed, 0, maxSpeed);
                 transform.position += speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up);
-
             } else if (moveValue.axis.x < 0)
             {
                 Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(moveValue.axis.x, 0, 0));
                 speed = moveValue.axis.x * sensitivity;
                 speed = Mathf.Clamp(speed, 0, maxSpeed);
                 transform.position += speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.down);
-            }
+            }*/
         }
  
     }
