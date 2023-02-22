@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PressurePlateDoor : MonoBehaviour
 {
-    // public SlideDoor door;
+    public SlideDoor door;
 
     private int collectGoal = 2;
     private int collectState = 0;
@@ -34,7 +34,23 @@ public class PressurePlateDoor : MonoBehaviour
         }
         if(collectState == collectGoal)
         {
-            // door.open;
+            door.open = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Key1"))
+        {
+            collectState--;
+        }
+        if (other.gameObject.CompareTag("Key2"))
+        {
+            collectState--;
+        }
+        if (collectState < collectGoal)
+        {
+            door.open = false;
         }
     }
 }
