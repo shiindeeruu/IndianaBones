@@ -1799,9 +1799,9 @@ GameObject:
   - component: {fileID: 468850817}
   - component: {fileID: 468850816}
   - component: {fileID: 468850815}
+  - component: {fileID: 468850819}
   - component: {fileID: 468850814}
   - component: {fileID: 468850820}
-  - component: {fileID: 468850819}
   - component: {fileID: 468850818}
   m_Layer: 0
   m_Name: PlateObject_Correct02
@@ -1881,7 +1881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468850813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3160529, y: 0.37152088, z: 9.846802}
+  m_LocalPosition: {x: 0.3160529, y: 1.275, z: 12.946}
   m_LocalScale: {x: 0.55806, y: 0.55806, z: 0.55806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0520d5aa31ee6a44bd3a0a48f11c18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  open: 0
+  open: 1
 --- !u!1001 &672223672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9358,7 +9358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105089554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34205294, y: 0.37152088, z: 8.653801}
+  m_LocalPosition: {x: -2.33, y: 1.51, z: 13.044}
   m_LocalScale: {x: 0.55806, y: 0.55806, z: 0.55806}
   m_ConstrainProportionsScale: 0
   m_Children: []
