@@ -5,9 +5,9 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     public SlideDoor door;
+    public int collectState = 0;
 
     private int collectGoal = 2;
-    private int collectState = 0;
 
     private void OnTriggerEnter(Collider other)
     {
